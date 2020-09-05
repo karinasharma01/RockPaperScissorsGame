@@ -1,0 +1,78 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    height:100vh;
+    background-color: rgb(129, 160, 217);
+    font-family: sans-serif;
+}
+.score {
+    color: white;
+    height: 20vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.score h2 {
+    font-size: 30px;
+}
+.score p {
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.start {
+    color: white;
+    height: 50vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+.start h1 {
+    font-size: 50px;
+}
+.start button, .game button {
+ width: 150px;
+ height: 50px;
+ color:white;
+ background: none;
+ border: none;
+ font-size: 20px;
+ background: rgb(84, 77, 89);
+ border-radius: 3px;
+ cursor: pointer;
+ 
+}
+.game {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+.winner {
+    color: winner;
+    text-align: center;
+    font-size: 40px;
+}
+.hands,.options {
+    display: flex;
+    justify-content: space-around;
+    align-items: ceneter;
+}
+.player-hand {
+    transform: rotateY(180deg);
+}
+div.fadeOut {
+ opacity: 0;
+ pointer-events: none;
+}
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
